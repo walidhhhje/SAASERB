@@ -1,27 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install",
-  "builds": [
-    {
-      "src": "apps/web/package.json",
-      "use": "@vercel/next"
-    },
-    {
-      "src": "apps/backend/src/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "apps/backend/src/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "apps/web"
-    }
-  ],
+  "buildCommand": "pnpm install && pnpm run build",
+  "installCommand": null,
+  "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_SUPABASE_URL": "https://xrbfyrhxygpenmojazde.supabase.co",
     "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyYmZ5cmh4eWdwZW5tb2phemRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA2OTEyOTAsImV4cCI6MjA4NjI2NzI5MH0.awEFpTCEEvTI693M6kvLIDsC7DIkOKptJPJKKlFlaPo",

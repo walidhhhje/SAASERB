@@ -2,7 +2,6 @@
   "version": 2,
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "packageManager": "pnpm@9.0.0",
   "builds": [
     {
       "src": "apps/web/package.json",

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "pnpm install && pnpm run build",
-  "installCommand": null,
+  "buildCommand": "npm install --legacy-peer-deps --force && npm run build",
+  "installCommand": "npm install --legacy-peer-deps --force",
   "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_SUPABASE_URL": "https://xrbfyrhxygpenmojazde.supabase.co",
